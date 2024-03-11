@@ -1,0 +1,156 @@
+.newsLetter{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px ;
+    margin-bottom: 150px;
+    gap: 30px;
+    background: linear-gradient(180deg, #f4f0e3 0%, #e1ffea22 60%);
+}
+.newsLetter h1{
+    color: #454545;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.newsLetter p{
+    color: #454545;
+    font-size: 16px;
+}
+.newsLetter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 700px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 80px;
+}
+.newsLetter input{
+    width: 400px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+.newsLetter div button{
+    width: 200px;
+    height: 50px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+@media(max-width:1280px){
+    .newsLetter{
+        padding: 0px 70px;
+        margin-bottom: 110px;
+        gap:  20px;
+    }
+    .newsLetter h1{
+        font-size: 35px;
+        padding-top: 3rem;
+    }
+    .newsLetter p{
+        font-size: 15px;
+    }
+    .newsLetter div{
+        width: 600px;
+        height: 60px;
+    }
+    .newsLetter div input{
+        width: 400px;
+    }
+    .newsLetter div button{
+        width: 160px;
+        height: 60px;
+    }
+}
+@media(max-width:1024px){
+    .newsLetter{
+        padding: 0px 50px;
+        margin-bottom: 90px;
+        gap:  18px;
+    }
+    .newsLetter h1{
+        font-size: 25px;
+        padding-top: 3rem;
+    }
+    .newsLetter p{
+        font-size: 13px;
+    }
+    .newsLetter div{
+        width: 500px;
+        height: 50px;
+    }
+    .newsLetter div input{
+        width: 300px;
+        font-size: .9rem;
+    }
+    .newsLetter div button{
+        width: 130px;
+        height: 40px;
+        font-size: .8rem;
+    }
+}
+@media(max-width:800px){
+    .newsLetter{
+        padding: 0px 30px;
+        margin-bottom: 70px;
+        gap:  14px;
+    }
+    .newsLetter h1{
+        font-size: 17px;
+        padding-top: 3rem;
+    }
+    .newsLetter p{
+        font-size: 10px;
+    }
+    .newsLetter div{
+        width: 400px;
+        height: 40px;
+    }
+    .newsLetter div input{
+        width: 230px;
+        font-size: .8rem;
+    }
+    .newsLetter div button{
+        width: 100px;
+        height: 30px;
+        font-size: .7rem;
+    }
+}
+@media(max-width:500px){
+    .newsLetter{
+        padding: 0px 20px;
+        margin-bottom: 50px;
+        gap:  12px;
+    }
+    .newsLetter h1{
+        font-size: 13px;
+        padding-top: 2rem;
+    }
+    .newsLetter p{
+        font-size: 8px;
+    }
+    .newsLetter div{
+        width: 300px;
+        height: 30px;
+    }
+    .newsLetter div input{
+        width: 180px;
+        font-size: .7rem
+    }
+    .newsLetter div button{
+        width: 80px;
+        height: 100%;
+        font-size: .5rem;
+    }
+}

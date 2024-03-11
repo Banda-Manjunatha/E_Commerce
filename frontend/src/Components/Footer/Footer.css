@@ -1,0 +1,158 @@
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 5rem;
+    
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo p{
+    font-size: 3rem;
+    color: #383838;
+    font-weight: 700;
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 1.1rem;
+}
+.footer-links li{
+    cursor: pointer;
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 1rem;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.social-icons li{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+    opacity: 1;
+}
+@media(max-width:1280px){
+    .footer{
+        gap: 20px;
+    }
+    .footer-logo{
+        gap: 20px;
+    }
+    .footer-logo img{
+        width: 40px;
+    }
+    .footer-logo p{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .footer-links{
+        font-size: 17px;
+        gap: 30px;
+    }
+    .Sicon{
+        font-size: 1.8rem;
+    }
+    .footer-copyright{
+        font-size: 15px;
+    }
+}
+@media(max-width:1024px){
+    .footer{
+        gap: 18px;
+    }
+    .footer-logo{
+        gap: 20px;
+    }
+    .footer-logo img{
+        width: 35px;
+    }
+    .footer-logo p{
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    .footer-links{
+        font-size: 15px;
+        gap: 25px;
+    }
+    .Sicon{
+        font-size: 1.4rem;
+    }
+    .footer-copyright{
+        font-size: 14px;
+    }
+}
+@media(max-width:800px){
+    .footer{
+        gap: 15px;
+    }
+    .footer-logo{
+        gap: 17px;
+    }
+    .footer-logo img{
+        width: 30px;
+    }
+    .footer-logo p{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    .footer-links{
+        font-size: 13px;
+        gap: 20px;
+    }
+    .Sicon{
+        font-size: 1.2rem;
+    }
+    .footer-copyright{
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+    .footer{
+        gap: 14px;
+    }
+    .footer-logo{
+        gap: 15px;
+    }
+    .footer-logo img{
+        width: 25px;
+    }
+    .footer-logo p{
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    .footer-links{
+        font-size: 11px;
+        gap: 18px;
+    }
+    .Sicon{
+        font-size: 1rem;
+    }
+    .footer-copyright{
+        font-size: 10px;
+    }
+}
