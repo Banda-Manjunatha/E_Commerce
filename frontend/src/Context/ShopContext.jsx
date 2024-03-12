@@ -70,32 +70,6 @@ const ShopContextProvider = (props) => {
 
   }, []); // Empty dependency array ensures fetching only once on component mount
   
-  
-    // Fetch cart items only if there's an auth token
-  //   const authToken = localStorage.getItem('auth-token');
-  //   if (authToken) {
-  //     try {
-  //       const cartResponse = await fetch('http://localhost:5000/getcart', {
-  //         method: 'POST',
-  //         headers: {
-  //           Accept: 'application/json',
-  //           'auth-token': authToken,
-  //           'Content-Type': 'application/json',
-  //         },
-  //         body: '', // Assuming no body data is required for getCart
-  //       });
-  //       if (!cartResponse.ok) {
-  //         throw new Error(`Network response was not ok: ${cartResponse.status}`);
-  //       }
-  //       const cartData = await cartResponse.json();
-  //       setCartItems(cartData);
-  //     } catch (error) {
-  //         console.error('Error fetching cart items:', error);
-  //       // Optionally display an error message to the user
-  // }
-  //   }
-  // }, []);
-  
 
   const addToCart = async (itemId) => {
     try {

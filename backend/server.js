@@ -116,82 +116,6 @@ const Users = mongoose.model('Users', {
     }
 })
 
-// API for SignUp the user.
-
-// app.post('/signup', async (req, res) => {
-//     try {
-//       // Check for existing user
-//       const existingUser = await Users.findOne({ email: req.body.email });
-//       if (existingUser) {
-//         return res.status(400).json({ success: false, error: 'User already exists.' });
-//       }
-  
-//       // Create user object
-//       const cart = {}; // Assuming an empty cart initially
-//       const user = new Users({
-//         name: req.body.username,
-//         email: req.body.email,
-//         password: req.body.password, // Assuming password hashing is done before here
-//         cartData: cart,
-//       });
-  
-//       // Save user and handle potential errors
-//       const savedUser = await user.save();
-//       if (!savedUser) {
-//         // Handle specific database errors (e.g., unique constraint violation)
-//         return res.status(500).json({ success: false, error: 'An error occurred while saving the user.' });
-//       }
-  
-//       // Generate token and send successful response
-//       const token = jwtToken.sign({ id: savedUser.id }, 'secret_ecom'); // Assuming JWT generation
-//       res.json({ success: true, token });
-//     } catch (error) {
-//       console.error('Error during signup:', error);
-//       // Handle unexpected errors
-//       res.status(500).json({ success: false, error: 'An unexpected error occurred.' });
-//     }
-//   });
-
-// app.post('/signup', async(req, res)=>{
-//     try{
-//         const { username, email, password } = req.body;
-
-//         // Ensure password is a string (if necessary)
-//         const passwordString = password.toString();
-
-//         const saltRounds = 20;
-//         const hashedPassword = await bcrypt.hash(passwordString, saltRounds);
-
-
-//         //Check existing code
-//         const existingUser = await Users.findOne({email});
-//         if(existingUser){
-//             return res.status(400).json({success:false, error:'User already exist.'})
-//         }
-//         const cart = {}; // Assuming an empty cart initially
-
-//         //Create user objecct
-//         const user = new Users({
-//             username,
-//             email,
-//             password:hashedPassword,
-//             cartData :cart,
-//         })
-
-//         const savedUser = await user.save();
-//         if(!savedUser){
-//             return res.status(500).json({ success: false, error: 'An error occurred while creating the user.' });
-//         }
-//         const data = { id: user.id }; // Use 'data' instead of 'userData'
-//         const token = jwtToken.sign(data, 'secret_ecom');
-//         res.json({ success: true, token, message: 'User created successfully.' }); 
-//         console.log('SignUp Successful.')// Consider sending relevant user data
-
-//     } catch (error) {
-//         console.error('Error during user creation:', error);
-//         res.status(500).json({ success: false, error: 'An unexpected error occurred.' });
-//     }
-// })
 
 // API for creating the user
 app.post('/signup',  async (req, res)=>{
@@ -228,13 +152,6 @@ app.post('/login', async (req, res) => {
       if (!user) {
         return res.status(401).json({ success: false, error: 'Invalid username.' });
       }
-    // // Ensure both password and hashed password are strings (if necessary)
-    //     const userPasswordString = user.password.toString(); // Assuming password is stored as another type
-    //     const passwordString = password.toString(); // Assuming password might not be a string
-
-    //     // Compare hashed passwords using bcrypt
-    //     const passwordMatch = await bcrypt.compare(passwordString, userPasswordString);
-
         const passwordMatch = passwordString === user.password;
         if (!passwordMatch) {
         return res.status(401).json({ success: false, error: 'Invalid password.' });
@@ -250,27 +167,7 @@ app.post('/login', async (req, res) => {
       res.status(500).json({ success: false, error: 'An unexpected error occurred.' });
     }
   });
-// app.post('/login', async(req, res)=>{
-//     let user = await Users.findOne({email:req.body.email});
-//     if(user){
-//         const passCompare = req.body.password === user.password;
-//         if(passCompare){
-//             const data = {
-//                 user:{id:user.id}
-//             }
-//             // There is no need of Token in login.
-//             const token = jwtToken.sign(data, 'secret_ecom')
-//             res.json({success:true, token});
-//             res.send('Login Success')
-//         }
-//         else{
-//             return res.status(401).json({ success:false,error: 'Invalid password' });        
-//         }
-//     }
-//     else{
-//         return res.status(401).json({ success:false,error: 'Invalid Email' });
-//     }
-// })
+
 
 // API end point for newcollection data
 app.get('/newcollections', async(req, res)=>{
