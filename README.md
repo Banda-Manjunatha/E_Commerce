@@ -1,5 +1,15 @@
 # Trendify: A Trendy E-commerce Platform (MERN Stack)
 
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [Project Description](#project-description)
+- [Key Skills Highlighted](#key-skills-highlighted)
+- [Project Features](#project-features)
+- [Installation](#installation)
+- [Contribution](#contribution)
+- [Conclusion](#conclusion)
+
 ## Project Demo
 
 In addition to the code, you can also explore a video presentation of the Trendify project on LinkedIn: [link to your LinkedIn video presentation.](https://www.linkedin.com/feed/update/urn:li:activity:7173709674586787842/) This video provides a visual walkthrough of the platform's functionalities and user experience.
