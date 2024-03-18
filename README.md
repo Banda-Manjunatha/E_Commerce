@@ -1,9 +1,12 @@
 # Trendify: A Trendy E-commerce Platform (MERN Stack)
 
+## Project Demo
+
+In addition to the code, you can also explore a video presentation of the Trendify project on LinkedIn: [link to your LinkedIn video presentation.](https://www.linkedin.com/feed/update/urn:li:activity:7173709674586787842/) This video provides a visual walkthrough of the platform's functionalities and user experience.
 
 ## Project Description
 
-- Trendify is a full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). This project demonstrates my proficiency in developing a secure, scalable, and user-friendly online shopping experience for trendy clothing items.
+Trendify is a full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). This project demonstrates my proficiency in developing a secure, scalable, and user-friendly online shopping experience for trendy clothing items.
 
 ## Key Skills Highlighted
 
@@ -52,20 +55,20 @@ Follow these steps to clone and set up the project locally:
     cd E_Commerce
     ```
 
-  - **For Frontend :**
-      ```bash
-      cd frontend
-      ```
-  - **For Backend :**
-      ```bash
-      cd backend
-      ```
-  - **For Admin Panel :**
-      ```bash
-      cd admin
-      ```
+     - **For Frontend :**
+         ```bash
+         cd frontend
+         ```
+     - **For Backend :**
+         ```bash
+         cd backend
+         ```
+     - **For Admin Panel :**
+         ```bash
+         cd admin
+         ```
       
-5. **Install Dependencies :**
+3. **Install Dependencies :**
 
      ```bash
     npm install  # Assuming you're using npm for package management
