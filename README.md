@@ -6,7 +6,7 @@ In addition to the code, you can also explore a video presentation of the Trendi
 
 ## Table of Contents
 
-- [Live Demo](#live-demo)
+- [Live Demo](https://www.linkedin.com/feed/update/urn:li:activity:7173709674586787842/)
 - [Project Description](#project-description)
 - [Key Skills Highlighted](#key-skills-highlighted)
 - [Project Features](#project-features)
